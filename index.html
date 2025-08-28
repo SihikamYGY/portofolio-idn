@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roisul Hikam | PortoFolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/b6b49c6ad2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+  <!-- NAV SECTION START -->
+  <nav class="nav">
+    <div class="nav-container" data-aos="fade-down" data-aos-duration="2000">
+      <div class="nav-logo">
+        <a href="index.html">Roisul Hikam</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#testi">Testimoni</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li class="contact-btn"><a href="#contact" >Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- DROP DOWN MENU -->
+    <div class="hamburger" onclick="hamburger()" data-aos="fade-down" data-aos-duration="3000">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="dropdown">
+      <div class="hamburger-link">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#testi">Testimoni</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+        <div class="cancel" onclick="cancel()">
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+           <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </div>
+    
+  </nav>
+  <!-- NAV SECTION END -->
+  <!-- HERO SECTION START -->
+  <section class="hero" id="hero">
+    <div class="hero-image" data-aos="fade-up" data-aos-duration="2000">
+      <img src="hero-img.png" alt="Hero Image">
+    </div>
+    <div class="hero-content" data-aos="fade-up" data-aos-duration="2000">
+      <div class="title-hero">
+        <h1>Hola, I'm <span style="color: #395B64;">Hikam</span></h1>
+        <p class="type-writer">And I'm <span></span></p>
+      </div>
+      <div class="mid-text">
+        <p>Junior Developer passionate about creating user-friendly web applications and growing through real-world projects. </p>
+        <div class="sosial-link">
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #395B64;"></i></a></li> 
+            <li><a href="#"><i class="fa-brands fa-github fa-xl" style="color: #395B64;"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #395B64;"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin fa-xl" style="color: #395B64;"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="#" class="btn">View Projects</a>
+    </div>
+    
+  </section>
+  <!-- HERO SECTION END -->
+
+  <!-- ABOUT SECTION START -->
+<section class="about-me" id="about" data-aos="fade-right" data-aos-duration="2000">
+  <h1>About Me</h1>
+  <div class="about-content">
+    <div class="about-text">
+      <p>
+        Hello, my name is <b>Roisul Hikam</b> 👋. I am a <b>Junior Developer</b> focused on creating 
+        web applications that are user-friendly, aesthetic, and efficient.  
+        My goal is to contribute to building successful organizations or companies, especially in the field of <b>IT</b>. 
+        <br><br>
+        And i school at <b>SMK IDN Backpacker School Sentul</b> majoring in <b>Software Engineering</b>.
+        In addition to programming, I have several hobbies that I enjoy during my free time:
+      </p>
+      <ul class="hobby">
+        <li><i class="fa-solid fa-basketball fa-lg"></i></li>
+        <li><i class="fa-solid fa-music fa-lg"></i></li>
+        <li><i class="fa-solid fa-volleyball fa-lg"></i></li>
+        <li><i class="fa-solid fa-chess fa-lg"></i>	</li>
+        <li><i class="fa-solid fa-gamepad fa-lg"></i></li>
+      </ul>
+      <button class="hire">
+        Hire Me
+      </button>
+    </div>
+    <img src="IMG-20250702-WA0007.jpg" alt="About Image">
+  </div>
+</section>
+  <!-- ABOUT SECTION END -->
+
+  <!-- SKILLS SECTION START -->
+  <section class="skills" id="skills" data-aos="fade-left" data-aos-duration="2000">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <div class="skill-name">
+          <span>HTML / CSS</span>
+          <span>75%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-percent="95"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">
+          <span>JavaScript</span>
+          <span>60%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-percent="85"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">
+          <span>React</span>
+          <span>30%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-percent="80"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">
+          <span>Laravel / PHP</span>
+          <span>45%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-percent="75"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">
+          <span>Git & GitHub</span>
+          <span>60%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-percent="90"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SKILLS SECTION END -->
+
+  <!-- TESTIMONY SECTION START -->
+
+  <div class="testimonial-container" id="testi" data-aos="fade-right" data-aos-duration="2000">
+        <div class="background-pattern"></div>
+        
+        <div class="testimonial-header">
+            <h1>What They Say?</h1>
+            <p>Testimony from were client</p>
+        </div>
+        <div class="testimonial-slider">
+            <div class="testimonial-slide active">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><rect width='80' height='80' fill='%23687bc7'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='30' fill='white'>AB</text></svg>" alt="Avatar" class="testimonial-avatar">
+                <p class="testimonial-text">"Pelayanan yang sangat memuaskan! Hasilnya jauh melampaui ekspektasi saya. Tim yang profesional dan responsif."</p>
+                <h3 class="testimonial-author">Ahmad Budiman</h3>
+                <p class="testimonial-role">CEO Startup Inovatif</p>
+            </div>
+            
+            <div class="testimonial-slide">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><rect width='80' height='80' fill='%23687bc7'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='30' fill='white'>SD</text></svg>" alt="Avatar" class="testimonial-avatar">
+                <p class="testimonial-text">"Sangat recomended! Proyek kami diselesaikan tepat waktu dengan kualitas yang exceptional. Will work with them again!"</p>
+                <h3 class="testimonial-author">Sari Dewi</h3>
+                <p class="testimonial-role">Marketing Director</p>
+            </div>
+            
+            <div class="testimonial-slide">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><rect width='80' height='80' fill='%23687bc7'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='30' fill='white'>RJ</text></svg>" alt="Avatar" class="testimonial-avatar">
+                <p class="testimonial-text">"Proses yang sangat smooth dari awal hingga akhir. Komunikasi yang jelas dan hasil yang memuaskan. Terima kasih!"</p>
+                <h3 class="testimonial-author">Rizky Jaya</h3>
+                <p class="testimonial-role">Pemilik UMKM</p>
+            </div>
+        </div>
+        
+        <div class="testimonial-navigation">
+            <button class="nav-btn prev-btn">❮</button>
+            <button class="nav-btn next-btn">❯</button>
+        </div>
+        
+        <div class="testimonial-indicators">
+            <div class="indicator active" data-index="0"></div>
+            <div class="indicator" data-index="1"></div>
+            <div class="indicator" data-index="2"></div>
+        </div>
+    </div>
+
+<!-- TESTIMONY SECTION END -->
+
+
+  <!-- PROJECT SECTION START -->
+  <section class="project" id="project" data-aos="fade-left" data-aos-duration="2000">
+    <h1>Featured Project</h1>
+    <div class="project-gallery">
+      <ul>
+        <li>
+          <div class="project-content">
+            <img src="IMG-20250702-WA0007.jpg" alt="">
+            <h3>Nama Project</h3>
+            <p>Keterangan</p>
+          </div>
+        </li>
+        <li>
+          <div class="project-content">
+            <img src="IMG-20250702-WA0007.jpg" alt="">
+            <h3>Nama Project</h3>
+            <p>Keterangan</p>
+          </div>
+        </li>
+        <li>
+          <div class="project-content">
+            <img src="IMG-20250702-WA0007.jpg" alt="">
+            <h3>Nama Project</h3>
+            <p>Keterangan</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  
+  <!-- PROJECT SECTION END -->
+  <!-- CONTACT FORM SECTION START -->
+  <section class="contact-form" id="contact" data-aos="fade-right " data-aos-duration="2000">
+    <h2>Contact Form</h2>
+    <form action="POST">
+      <ul>
+        <li class="name-form">
+          <label for="">Name: </label>
+          <input type="text" placeholder="Isi Name...">
+        </li>
+        <li class="email-form">
+          <label for="">Email: </label>
+          <input type="email" placeholder="Isi Email...">
+        </li>
+        <li class="desc-form">
+          <label for="">Description: </label>
+          <textarea name="desc" id="desc" required></textarea>
+        </li>
+        <li>
+          <input class="form-btn" type="button" value="Submit">
+        </li>
+      </ul>
+    </form>
+  </section>
+  <!-- CONTACT FORM SECTION END -->
+
+  <!-- FOOTER SECTION START -->
+  <footer>
+    <section class="footer">
+      <h1 class="title">
+        Reach Out To Me
+      </h1>
+
+      <hr style="width:100%;text-align:left;margin-left:0">
+
+      <div class="footer-content">
+        <div class="short-intro">
+          <img src="hero-img.png" alt="#">
+          <p>
+            "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. <br> 
+            Feel free to reach out to me through any of the social media platforms below."
+          </p> 
+          <div class="sosial-link-footer">
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #E7F6F2;"></i></a></li> 
+              <li><a href="#"><i class="fa-brands fa-github fa-xl" style="color: #E7F6F2;"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #E7F6F2;"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin fa-xl" style="color: #E7F6F2;"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr style="width:100%;text-align:left;margin-left:0">
+
+      <div class="copy-right">
+        <div>
+          <a href="#">Terms of Service</a>
+          <a href="#">FAQ</a>
+        </div>
+        <h4 class="text-footer">© 2024 Roisul Hikam. All rights reserved.</h4>
+        <a>Privacy Policy</a>
+      </div>
+      
+    </section>
+  </footer>
+
+  <!-- FOOTER SECTION END -->
+</body>
+<script>
+AOS.init();
+
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);  
+  };
+// Skill Animation
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      let skill = entry.target;
+      skill.classList.add("visible");
+
+      let bar = skill.querySelector(".progress-fill");
+      let percent = bar.getAttribute("data-percent");
+      bar.style.width = percent + "%";
+
+    observer.unobserve(skill);
+    }
+  });
+}, { threshold: 0.4 });
+
+document.querySelectorAll(".skill").forEach(skill => {
+  observer.observe(skill);
+});
+
+function hamburger(){
+  const navbar = document.querySelector('.dropdown')
+  navbar.style.transform = 'translateY(0px)'
+}
+
+function cancel(){
+  const navbar = document.querySelector('.dropdown')
+  navbar.style.transform = 'translateY(-500px)'
+}
+
+// Navbar fixed on scroll
+
+    const nav = document.querySelector('.nav-container');
+window.addEventListener('scroll', fixNav);
+
+function fixNav() {
+  if (window.scrollY > nav.offsetHeight + 150) {
+    nav.classList.add('active');
+  } else {
+    nav.classList.remove('active');
+  }
+}
+
+// Detect footer visibility
+const footer = document.querySelector('footer');
+const navBar = document.querySelector('.nav-container');
+
+const footerObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Kalau footer kelihatan penuh
+      navBar.classList.add('dark');
+      navBar.classList.remove('active'); // hapus style terang
+    } else {
+      // Kalau keluar dari footer
+      navBar.classList.remove('dark');
+    }
+  });
+}, { threshold: 0.8 }); // 80% footer kelihatan baru dihitung "full"
+
+footerObserver.observe(footer);
+
+// Testimonial Carousel
+document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const indicators = document.querySelectorAll('.indicator');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            let currentSlide = 0;
+            
+            // Fungsi untuk mengupdate slide
+            function updateSlide() {
+                slides.forEach((slide, index) => {
+                    if (index === currentSlide) {
+                        slide.classList.add('active');
+                    } else {
+                        slide.classList.remove('active');
+                    }
+                });
+                
+                indicators.forEach((indicator, index) => {
+                    if (index === currentSlide) {
+                        indicator.classList.add('active');
+                    } else {
+                        indicator.classList.remove('active');
+                    }
+                });
+            }
+            
+            // Event listener untuk tombol next
+            nextBtn.addEventListener('click', function() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                updateSlide();
+            });
+            
+            // Event listener untuk tombol previous
+            prevBtn.addEventListener('click', function() {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                updateSlide();
+            });
+            
+            // Event listener untuk indicators
+            indicators.forEach(indicator => {
+                indicator.addEventListener('click', function() {
+                    currentSlide = parseInt(this.getAttribute('data-index'));
+                    updateSlide();
+                });
+            });
+            
+            // Auto slide setiap 5 detik
+            setInterval(function() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                updateSlide();
+            }, 5000);
+        });
+
+
+// Type Writer Effect
+
+</script>
+</html>

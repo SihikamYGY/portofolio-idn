@@ -17,5 +17,6 @@ FEATURE
 On Going Update
 - Responsive Mobile & Tablet
 - Website Dynamic (I Think???)
+- Project Page
 
 <p>Maybe Thats All <br> Thank You For Visiting</p>

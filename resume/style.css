@@ -226,3 +226,12 @@ body {
 .resume .rr .rh ul li:last-child:before {
     display: none;
 }
+
+
+button {
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: #0bb5f4;
+    border: none;
+    border-radius: 5px;
+}

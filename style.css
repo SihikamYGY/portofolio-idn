@@ -30,6 +30,10 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -37,7 +41,7 @@ html {
 
 body {
   width: 100%;
-  height: 700vh;
+  height: auto;
   overflow: hidden;
   background-color: var(--background-color);
   margin: 0 auto;
@@ -308,7 +312,7 @@ nav .nav-logo a {
 
 .hero-image {
   width: 100%;
-  height: 550px;
+  height: 540px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -318,7 +322,7 @@ nav .nav-logo a {
 
 .hero .hero-image img {
   width: 500px;
-  height: 550px;
+  height: fit-content;
   margin: 0 auto;
   background-size: cover;
   /* background-position: center;
@@ -984,7 +988,7 @@ nav .nav-logo a {
 }
 
 .content-contact {
-  display: flex;
+  display: flex;  
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -1095,6 +1099,8 @@ footer {
 
 /* RESPONSIVE CONFIG START */
 
+/* RESPONSIVE */
+
 @media screen and (max-width: 884px) {
   body {
     overflow-y: visible;
@@ -1110,6 +1116,7 @@ footer {
   .hero {
     display: flex;
     flex-direction: column;
+    margin-top: 80px;
   }
 
   .nav-container .nav-links {
@@ -1142,4 +1149,182 @@ footer {
   }
 }
 
+
+
 /* RESPONSIVE CONFIG START */
+
+
+/* RESPONSIVE STYLE */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .project {
+    height: auto; /* biar ga maksa full screen */
+    padding: 40px 20px;
+  }
+
+  .project .project-gallery {
+    height: auto;
+    flex-wrap: wrap; /* biar bisa turun ke bawah */
+  }
+
+  .project .project-gallery ul {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .project-content {
+    width: 300px;
+    height: auto; /* biar menyesuaikan isi */
+    padding-bottom: 20px;
+  }
+
+  .project-content img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .project h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .project .project-gallery ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-content {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .project-content img {
+    height: 180px;
+  }
+
+  .project-content p {
+    font-size: 0.9rem;
+    margin-right: 10px;
+  }
+}
+
+/* Extra small (HP kecil banget) */
+@media (max-width: 480px) {
+  .project h1 {
+    font-size: 1.2rem;
+  } 
+
+  .project-content h3 {
+    font-size: 1rem;
+  }
+
+  .project-content p {
+    font-size: 0.8rem;
+  }
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .content-contact {
+    flex-direction: column; /* gambar di atas, form di bawah */
+    gap: 30px;
+  }
+
+  .form-btn {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .name-form input,
+  .email-form input,
+  .desc-form textarea,
+  .form-btn {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small (HP kecil banget) */
+@media (max-width: 480px) {
+  .contact-form h2 {
+    font-size: 1.25rem;
+  }
+  .form-btn {
+    height: 45px;
+    font-size: 0.85rem;
+  }
+}
+
+/* === RESPONSIVE BREAKPOINTS === */
+  
+/* Tablet */
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column-reverse; /* teks di atas, foto di bawah */
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .about-content p {
+    text-align: center;
+  }
+
+  .hobby {
+    justify-content: center;
+  }
+
+  .btn-hire {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-me h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+  }
+
+  .btn-hire {
+    width: 100%;
+    max-width: 280px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small (HP kecil banget) */ 
+@media (max-width: 480px) {
+  .about-me h1 {
+    font-size: 1.25rem;
+  }
+
+  .about-content p {
+    font-size: 0.85rem;
+  }
+
+  .hobby {
+    gap: 15px;
+  }
+
+  .btn-hire {
+    height: 45px;
+    font-size: 0.85rem;
+  }
+}
